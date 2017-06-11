@@ -1,0 +1,82 @@
+/**********************************************************************
+ * Estilos generales
+ **********************************************************************/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: verdana, geneva, serif;
+}
+
+header {
+    padding: 20px 0;
+}
+
+div.contenedor {
+    width: 1200px;
+    margin: 0 auto;
+}
+/**********************************************************************
+ * Navegación - Primer Nivel
+ **********************************************************************/
+.navegacion {
+    background-color: #db008d;
+}
+
+nav {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul:after { /* Para limpiar los floats del menú */
+    content: "";
+    display: block;
+    clear: both;
+}
+nav > ul > li {
+    float: left;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 200px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #00B9E5;
+}
+/**********************************************************************
+ * Navegación - Segundo Nivel
+ **********************************************************************/
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 184, 228, .7);
+    display: none;
+}
+
+nav ul li:hover > ul { /* Para mostrar los elementos del menú al hacer hover sobre li */
+    display: block;
+}
+
+nav ul li:hover { /* Para que no se pierda la selección del li padre */
+    background-color: rgba(0, 184, 228, .7);
+}
