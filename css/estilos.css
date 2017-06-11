@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00B9E5;
+    background-color: #00B8E4;
 }
 /**********************************************************************
  * Navegación - Segundo Nivel
@@ -79,4 +79,125 @@ nav ul li:hover > ul { /* Para mostrar los elementos del menú al hacer hover sob
 
 nav ul li:hover { /* Para que no se pierda la selección del li padre */
     background-color: rgba(0, 184, 228, .7);
+}
+/**********************************************************************
+ * Contenido Principal
+ **********************************************************************/
+div.contenido:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main {
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+}
+/**********************************************************************
+ * Entradas de Posts
+ **********************************************************************/
+article {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #00B8E4;
+    margin-bottom: 20px;
+}
+
+article img {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+
+article p {
+    line-height: 2;
+    text-align: justify;    
+}
+
+.boton {
+    background-color: #00B8E4;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/**********************************************************************
+ * Sidebar
+ **********************************************************************/
+aside {
+    margin-top: 30px;
+    float: right;
+    width: 30%;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 10px 0 10px 10px;
+}
+
+aside ul li:hover {
+    background-color: #00B8E4;
+    cursor: pointer;
+}
+
+aside ul li a {
+    color: #00B8E4;
+    text-decoration: none;
+}
+
+aside ul li:hover a {
+    color: #FFFFFF;
+}
+/**********************************************************************
+ * Footer
+ **********************************************************************/
+footer {
+    background-color: #db008d;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+
+footer h2 {
+    color: #FFFFFF;
+}
+
+footer .contenedor:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer div.nosotros {
+    float: left;
+    width: 30%;
+    color: #FFFFFF;
+}
+
+footer div.menu {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+footer nav {
+    width: auto;
+}
+
+footer nav ul li a {
+    width: auto;
+}
+
+p.copyright {
+    padding: 20px 0;
+    text-align: center;
+    color: #FFFFFF;
 }
